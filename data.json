@@ -27,7 +27,7 @@
 	{ "id_sample": 25, "name": "Gula Kapas" },
 	{ "id_sample": 26, "name": "Gula Merah" },
 	{ "id_sample": 27, "name": "Kopi dan Teh Kering" },
-	{ "id_sample": 28, "name": "Pangan Jajan Anak Sekolah (PJAS)" }
+	{ "id_sample": 28, "name": "Cilok (PJAS)" }
 	
   ],
   "parameters": [
@@ -39,13 +39,13 @@
 	{ "id_parameter": 6, "id_sample": 2, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 7, "id_sample": 2, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 183243 },
 	{ "id_parameter": 8, "id_sample": 2, "name": "Identifikasi Pewarna Terlarang (Rhodamin B)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 9, "id_sample": 2, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 9, "id_sample": 2, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 10, "id_sample": 2, "name": "Staphylococcus aureus", "method": "Mikrobiologi 8: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (4x pengujian atau lebih)", "price": 1154627 },
 	
 	{ "id_parameter": 11, "id_sample": 3, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 12, "id_sample": 3, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 183243 },
 	{ "id_parameter": 13, "id_sample": 3, "name": "Identifikasi Pewarna Terlarang (Rhodamin B)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 14, "id_sample": 3, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 14, "id_sample": 3, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 15, "id_sample": 3, "name": "Staphylococcus aureus", "method": "Mikrobiologi 8: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (4x pengujian atau lebih)", "price": 1154627 },
 	
 	{ "id_parameter": 16, "id_sample": 4, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
@@ -57,44 +57,44 @@
 	{ "id_parameter": 21, "id_sample": 5, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 22, "id_sample": 5, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 183243 },
 	{ "id_parameter": 23, "id_sample": 5, "name": "Identifikasi Pewarna Terlarang (Rhodamin B)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 24, "id_sample": 5, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 24, "id_sample": 5, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 25, "id_sample": 5, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 	
 	{ "id_parameter": 26, "id_sample": 6, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 27, "id_sample": 6, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 183243 },
 	{ "id_parameter": 28, "id_sample": 6, "name": "Identifikasi Pewarna Terlarang (Rhodamin B)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 29, "id_sample": 6, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 29, "id_sample": 6, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 30, "id_sample": 6, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 	
 	{ "id_parameter": 31, "id_sample": 7, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 32, "id_sample": 7, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 183243 },
 	{ "id_parameter": 33, "id_sample": 7, "name": "Identifikasi Pewarna Terlarang (Rhodamin B)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 34, "id_sample": 7, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 34, "id_sample": 7, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 35, "id_sample": 7, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 36, "id_sample": 8, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 37, "id_sample": 8, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 332073 },
 	{ "id_parameter": 38, "id_sample": 8, "name": "Identifikasi Pewarna Terlarang (Rhodamin B)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 39, "id_sample": 8, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 39, "id_sample": 8, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 40, "id_sample": 8, "name": "Staphylococcus aureus", "method": "Mikrobiologi 8: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (4x pengujian atau lebih)", "price": 1154627 },
 	
 	{ "id_parameter": 41, "id_sample": 9, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
 	{ "id_parameter": 42, "id_sample": 9, "name": "PK Aflatoksin B1 dan Total", "method": "Fisika 9 + Kimia-Fisika 13: Ekstraksi padat-cair (SPE) + Uji kromatografi cair kinerja tinggi/UPLC/Kromatografi Ion dengan derivatisasi", "price": 1313312 },
-	{ "id_parameter": 44, "id_sample": 9, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 44, "id_sample": 9, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 45, "id_sample": 9, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 	
 	{ "id_parameter": 46, "id_sample": 10, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
 	{ "id_parameter": 47, "id_sample": 10, "name": "PK Aflatoksin B1 dan Total", "method": "Fisika 9 + Kimia-Fisika 13: Ekstraksi padat-cair (SPE) + Uji kromatografi cair kinerja tinggi/UPLC/Kromatografi Ion dengan derivatisasi", "price": 1313312 },
-	{ "id_parameter": 49, "id_sample": 10, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 49, "id_sample": 10, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 50, "id_sample": 10, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 51, "id_sample": 11, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
 	{ "id_parameter": 52, "id_sample": 11, "name": "PK Aflatoksin B1 dan Total", "method": "Fisika 9 + Kimia-Fisika 13: Ekstraksi padat-cair (SPE) + Uji kromatografi cair kinerja tinggi/UPLC/Kromatografi Ion dengan derivatisasi", "price": 1313312 },
-	{ "id_parameter": 54, "id_sample": 11, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 54, "id_sample": 11, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 55, "id_sample": 11, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 56, "id_sample": 12, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
-	{ "id_parameter": 57, "id_sample": 12, "name": "PK Cemaran Pb dan As", "method": "Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 57, "id_sample": 12, "name": "PK Cemaran Pb", "method": "Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 58, "id_sample": 12, "name": "PK Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 59, "id_sample": 12, "name": "PK Asesulfam-K", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 60, "id_sample": 12, "name": "Escherichia coli", "method": "Mikrobiologi 8: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (4x pengujian atau lebih)", "price": 1154627 },
@@ -102,37 +102,37 @@
 	{ "id_parameter": 61, "id_sample": 13, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 62, "id_sample": 13, "name": "Identifikasi Pewarna (Methanyl Yellow)", "method": "Fisika 9 + Kimia 1: Ekstraksi cair-cair + Uji reaksi warna", "price": 482205 },
 	{ "id_parameter": 63, "id_sample": 13, "name": "PK Pemanis (Siklamat)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 64, "id_sample": 13, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 64, "id_sample": 13, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 65, "id_sample": 13, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 66, "id_sample": 14, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 67, "id_sample": 14, "name": "Identifikasi Pewarna (Methanyl Yellow)", "method": "Fisika 9 + Kimia 1: Ekstraksi cair-cair + Uji reaksi warna", "price": 482205 },
 	{ "id_parameter": 68, "id_sample": 14, "name": "PK Pemanis Sakarin", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 69, "id_sample": 14, "name": "Identifikasi Siklamat", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 70, "id_sample": 14, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 70, "id_sample": 14, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 71, "id_sample": 14, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 72, "id_sample": 15, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 73, "id_sample": 15, "name": "Identifikasi Pewarna dentifikasi Pewarna(Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Fisika 9 + Kimia 11: Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 851297 },
 	{ "id_parameter": 74, "id_sample": 15, "name": "PK Sulfit", "method": "Fisika 11 + Kimia 4: Destilasi + Titrimetri, kecuali argentometri", "price": 533148 },
-	{ "id_parameter": 75, "id_sample": 15, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 75, "id_sample": 15, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 76, "id_sample": 15, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 77, "id_sample": 16, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 78, "id_sample": 16, "name": "Identifikasi Pewarna (Methanyl Yellow)", "method": "Fisika 9 + Kimia 1: Ekstraksi cair-cair + Uji reaksi warna", "price": 482205 },
-	{ "id_parameter": 79, "id_sample": 16, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 79, "id_sample": 16, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 80, "id_sample": 16, "name": "PK Cemaran Cd", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 81, "id_sample": 16, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 82, "id_sample": 17, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 83, "id_sample": 17, "name": "Identifikasi Pewarna (Methanyl Yellow)", "method": "Fisika 9 + Kimia 11:  Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 84, "id_sample": 17, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 84, "id_sample": 17, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 85, "id_sample": 17, "name": "PK Sulfit", "method": "Fisika 11 + Kimia 4:  Destilasi + Titrimetri, kecuali argentometri", "price": 533148 },
 	{ "id_parameter": 86, "id_sample": 17, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 87, "id_sample": 18, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 88, "id_sample": 18, "name": "Identifikasi Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Fisika 9 + Kimia 11:  Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis", "price": 1124007 },
-	{ "id_parameter": 89, "id_sample": 18, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 89, "id_sample": 18, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 90, "id_sample": 18, "name": "PK Sorbat", "method": "Kimia-Fisika 11:  Uji kromatografi cair kinerja tinggi (1-3 senyawa)", "price": 851297 },
 	{ "id_parameter": 91, "id_sample": 18, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
@@ -145,36 +145,36 @@
 	{ "id_parameter": 97, "id_sample": 20, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 98, "id_sample": 20, "name": "PK Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 99, "id_sample": 20, "name": "PK Pemanis (Siklamat)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 100, "id_sample": 20, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 100, "id_sample": 20, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 101, "id_sample": 20, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 102, "id_sample": 21, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 103, "id_sample": 21, "name": "PK Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 104, "id_sample": 21, "name": "PK Pemanis (Siklamat)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 105, "id_sample": 21, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 105, "id_sample": 21, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 106, "id_sample": 21, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 107, "id_sample": 22, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 108, "id_sample": 22, "name": "PK Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 109, "id_sample": 22, "name": "PK Pemanis (Siklamat)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 110, "id_sample": 22, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 110, "id_sample": 22, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 111, "id_sample": 22, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 112, "id_sample": 23, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 113, "id_sample": 23, "name": "PK Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 114, "id_sample": 23, "name": "PK Pemanis (Siklamat)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 115, "id_sample": 23, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 115, "id_sample": 23, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 116, "id_sample": 23, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 
 	{ "id_parameter": 117, "id_sample": 24, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 118, "id_sample": 24, "name": "PK Pewarna (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 119, "id_sample": 24, "name": "PK Pemanis (Siklamat)", "method": "Kimia-Fisika 11: Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
-	{ "id_parameter": 120, "id_sample": 24, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 120, "id_sample": 24, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 121, "id_sample": 24, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 	
 	{ "id_parameter": 122, "id_sample": 25, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 123, "id_sample": 25, "name": "Identifikasi Pewarna yang Dilarang (Pewarna yang diuji sesuai dugaan pewarna pada produk)", "method": "Fisika 9 + Kimia 11:  Ekstraksi cair-cair + Uji Spektrofotometri UV-Vis/Infra Merah", "price": 1124007 },
-	{ "id_parameter": 124, "id_sample": 25, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 124, "id_sample": 25, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 125, "id_sample": 25, "name": "PK Siklamat", "method": "Kimia-Fisika 11:  Uji kromatografi cair kinerja tinggi (1 - 3 senyawa)", "price": 851297 },
 	{ "id_parameter": 126, "id_sample": 25, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 },
 	
@@ -185,14 +185,14 @@
 	
 	{ "id_parameter": 131, "id_sample": 27, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 132, "id_sample": 27, "name": "PK Okratoksin A", "method": "Fisika 4 + Kimia 8: Ekstraksi padat-cair (SPE) + Uji kromatografi cair kinerja tinggi (1-3 senyawa/elemen)", "price": 1243312 },
-	{ "id_parameter": 133, "id_sample": 27, "name": "PK Cemaran Pbdan As", "method": " Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 133, "id_sample": 27, "name": "PK Cemaran Pb", "method": " Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 134, "id_sample": 27, "name": "Identifikasi Bahan Kimia Obat", "method": "Fisika 9 + Kimia-Fisika 2:   Ekstraksi cair-cair + Uji kromatografi lapis tipis", "price": 781753 },
 	{ "id_parameter": 135, "id_sample": 27, "name": "Kapang Khamir", "method": "Mikrobiologi 8: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (4x pengujian atau lebih)", "price": 1154627 },
 	
 	{ "id_parameter": 136, "id_sample": 28, "name": "Pemerian", "method": "Fisika 1: Uji Organoleptik", "price": 31257 },
     { "id_parameter": 137, "id_sample": 28, "name": "Identifikasi Formalin", "method": "Fisika 11 + Kimia 1: Destilasi + Uji reaksi Warna", "price": 332073 },
 	{ "id_parameter": 138, "id_sample": 28, "name": "Identifikasi Boraks", "method": "Fisika 3 + Kimia 1: Destruksi kering (kadar abu/sisa pemijaran) + Uji reaksi warna", "price": 281509 },
-	{ "id_parameter": 139, "id_sample": 28, "name": "PK Cemaran Pb dan As", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
+	{ "id_parameter": 139, "id_sample": 28, "name": "PK Cemaran Pb", "method": "Fisika 4 + Kimia 8: Destruksi basah dengan microwave + Uji spektrofotometri Serapan Atom Flame/Flameless (1-3 senyawa/elemen)", "price": 932042 },
 	{ "id_parameter": 140, "id_sample": 28, "name": "Salmonella", "method": "Mikrobiologi 6: Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)", "price": 1642350 }
 	
   ]}
