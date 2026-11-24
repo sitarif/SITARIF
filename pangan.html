@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampel Pangan | SI TARIF Balai POM di Ambon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#0a4d9b;--dark:#07366f;--light:#eaf3ff;--muted:#68798d}
+body{
+  min-height:100vh;
+  font-family:'Poppins',sans-serif;
+  color:#18324f;
+  padding:28px 18px 40px;
+  background:linear-gradient(135deg,rgba(239,246,255,.96),rgba(248,250,255,.94)),url('bg-lab.png') center/cover fixed;
+}
+.page{
+  max-width:1040px;
+  width:100%;
+  margin:auto;
+}
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:22px;
+  flex-wrap:wrap;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.brand img{
+  width:54px;
+  height:54px;
+  object-fit:contain;
+}
+.brand-name{
+  font-size:15px;
+  font-weight:700;
+  color:var(--dark);
+}
+.brand-sub{
+  font-size:11px;
+  color:var(--muted);
+}
+.btn-back{
+  text-decoration:none;
+  background:#ffffff;
+  color:var(--dark);
+  border:1px solid #d5e3f5;
+  padding:9px 16px;
+  border-radius:10px;
+  font-size:12.5px;
+  font-weight:600;
+  transition:.2s;
+}
+.btn-back:hover{
+  background:var(--light);
+}
+.box{
+  background:rgba(255,255,255,.97);
+  border:1px solid #e2ebf5;
+  border-radius:20px;
+  padding:26px;
+  box-shadow:0 12px 30px rgba(15,23,42,.08);
+  margin-bottom:22px;
+}
+.box h1{
+  font-size:22px;
+  color:var(--dark);
+  margin-bottom:6px;
+}
+.box p.desc{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:16px;
+}
+.toolbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:14px;
+}
+.search-box{
+  position:relative;
+  flex:1;
+  min-width:240px;
+  max-width:420px;
+}
+#searchInput{
+  width:100%;
+  padding:10px 14px;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  font-family:'Poppins',sans-serif;
+  font-size:13px;
+  color:#18324f;
+  background:#f8fbff;
+  outline:none;
+  transition:.2s;
+}
+#searchInput:focus{
+  background:#ffffff;
+  border-color:#0f4c81;
+  box-shadow:0 0 0 3px rgba(15,76,129,.12);
+}
+.result-count{
+  font-size:12px;
+  color:var(--muted);
+  font-weight:500;
+}
+.table-wrap{
+  width:100%;
+  overflow-x:auto;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:600px;
+  background:#fff;
+}
+thead th{
+  background:linear-gradient(135deg,#0f4c81 0%,#1665a8 100%);
+  color:#fff;
+  font-size:12.5px;
+  font-weight:600;
+  padding:12px;
+  text-align:left;
+  border:1px solid #0b3961;
+}
+thead th.center{
+  text-align:center;
+}
+tbody td{
+  padding:11px 12px;
+  font-size:13px;
+  color:#334155;
+  border:1px solid #cbd5e1;
+  vertical-align:middle;
+}
+tbody td.no-cell{
+  text-align:center;
+  font-weight:600;
+  color:#475569;
+  width:64px;
+}
+tbody td.sample-cell{
+  font-weight:500;
+  color:#0f172a;
+}
+tbody td.action-cell{
+  text-align:center;
+  width:170px;
+}
+tbody tr:nth-child(even){
+  background:#f8fbff;
+}
+tbody tr:hover{
+  background:#eef6ff;
+}
+.btn-select{
+  background:#0f4c81;
+  color:#fff;
+  border:none;
+  padding:8px 16px;
+  border-radius:9px;
+  font-family:'Poppins',sans-serif;
+  font-size:12.5px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s;
+}
+.btn-select:hover{
+  background:var(--dark);
+}
+@media(max-width:650px){
+  body{padding:16px 12px 28px}
+  .box{padding:18px}
+  .search-box{max-width:100%}
+}
+</style>
+</head>
+<script>sessionStorage.setItem('sitarif_visited_subpage', '1');</script>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo-bpom.png" alt="Logo BPOM">
+      <div>
+        <div class="brand-name">BALAI POM DI AMBON</div>
+        <div class="brand-sub">Tarif Pengujian Sampel Pangan</div>
+      </div>
+    </div>
+    <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+  </header>
+
+  <section class="box">
+    <h1>Tarif Pengujian Sampel Pangan</h1>
+    <p class="desc">Cari nama sampel lalu pilih parameter uji untuk melihat rincian tarif pengujian.</p>
+
+    <div class="toolbar">
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Cari nama sampel pangan..." oninput="searchTable()">
+      </div>
+      <div class="result-count" id="resultCount">Memuat data sampel...</div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="sampleTable">
+        <thead>
+          <tr>
+            <th class="center">No</th>
+            <th>Sampel</th>
+            <th class="center">Parameter Uji</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script>
+let totalSamples = 0;
+
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    const tbody = document.querySelector('#sampleTable tbody');
+    totalSamples = data.samples.length;
+    tbody.innerHTML = data.samples.map((s, i) => `
+      <tr>
+        <td class="no-cell">${i + 1}</td>
+        <td class="sample-cell">${s.name}</td>
+        <td class="action-cell"><button type="button" class="btn-select" onclick="goDetail(${s.id_sample})">Pilih Parameter</button></td>
+      </tr>
+    `).join('');
+    updateCount(totalSamples);
+  })
+  .catch(() => {
+    document.getElementById('resultCount').textContent = 'Gagal memuat data sampel.';
+  });
+
+function goDetail(id) {
+  window.location.href = `detail.html?sample=${id}`;
+}
+
+function updateCount(visibleCount) {
+  document.getElementById('resultCount').textContent = `Menampilkan ${visibleCount} dari ${totalSamples} sampel`;
+}
+
+function searchTable() {
+  const input = document.getElementById('searchInput').value.toLowerCase().trim();
+  let visible = 0;
+  document.querySelectorAll('#sampleTable tbody tr').forEach(row => {
+    const match = row.cells[1].textContent.toLowerCase().includes(input);
+    row.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+  updateCount(visible);
+}
+</script>
+</body>
+</html>

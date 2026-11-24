@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uji Mikrobiologi | SI TARIF - Balai POM di Ambon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#0a4d9b;--dark:#07366f;--light:#eaf3ff;--muted:#68798d}
+body{min-height:100vh;font-family:Poppins,sans-serif;color:#18324f;padding:28px 18px 40px;background:linear-gradient(135deg,rgba(239,246,255,.96),rgba(248,250,255,.94)),url('bg-lab.png') center/cover fixed}
+.page{max-width:1120px;width:100%;margin:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand-name{font-size:15px;font-weight:700;color:var(--dark)}
+.brand-sub{font-size:11px;color:var(--muted)}
+.back-btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--blue);background:white;border:1px solid #dce9f8;padding:8px 15px;border-radius:30px;font-size:12px;font-weight:600;transition:.2s}
+.back-btn:hover{background:var(--light);border-color:#b6d2f2}
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:30px 32px;color:white;background:linear-gradient(120deg,#07366f,#0a4d9b 58%,#2877c8);box-shadow:0 18px 45px rgba(7,54,111,.16)}
+.eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:1.2px;color:#d8eaff;background:#ffffff1f;border:1px solid #ffffff30;border-radius:30px;padding:5px 12px;margin-bottom:12px}
+h1{font-size:clamp(24px,4vw,34px);line-height:1.18;font-weight:800}
+.hero p{color:#e5f0ff;font-size:13px;line-height:1.7;margin-top:8px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:24px 0 14px;flex-wrap:wrap}
+.search-box{flex:1;min-width:240px;position:relative}
+.search-box input{width:100%;padding:11px 16px;border-radius:12px;border:1px solid #d5e3f3;background:white;font-family:inherit;font-size:13px;color:#18324f;outline:none;transition:.2s}
+.search-box input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #0a4d9b18}
+.count-pill{font-size:12px;font-weight:600;color:var(--blue);background:white;border:1px solid #dce9f8;padding:8px 14px;border-radius:12px}
+.table-wrap{background:white;border:1px solid #e2ebf5;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #1942700e}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead{background:#f3f8ff;border-bottom:1px solid #dce9f8}
+th{padding:14px 16px;text-align:left;font-weight:700;color:var(--dark);font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+td{padding:14px 16px;border-bottom:1px solid #eef3fa;vertical-align:top;line-height:1.6}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#f9fcff}
+.col-no{width:56px;text-align:center;font-weight:600;color:var(--muted)}
+.col-satuan{width:210px;color:#4a607a}
+.col-tarif{width:170px;text-align:right;font-weight:700;color:var(--dark);white-space:nowrap}
+.empty{text-align:center;padding:32px 16px;color:var(--muted);display:none}
+footer{text-align:center;color:#8190a2;font-size:11px;margin-top:27px}
+@media(max-width:650px){body{padding:16px 12px 28px}.topbar{flex-wrap:wrap}.brand img{width:46px;height:46px}.hero{padding:24px 20px}th,td{padding:11px 12px;font-size:12px}}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo-bpom.png" alt="Logo BPOM">
+      <div>
+        <div class="brand-name">BALAI POM DI AMBON</div>
+        <div class="brand-sub">Layanan Informasi Pengujian</div>
+      </div>
+    </div>
+    <a class="back-btn" href="tarif-parameter.html">← Kembali ke Submenu</a>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">KELOMPOK V · TARIF PER-PARAMETER</span>
+    <h1>Uji Mikrobiologi</h1>
+    <p>Lampiran Keputusan Kepala BPOM Nomor 489 Tahun 2024 tentang Penetapan Tarif atas Jenis PNBP yang Bersifat Volatil untuk Jasa Pengujian.</p>
+  </section>
+
+  <div class="toolbar">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari parameter uji mikrobiologi (contoh: antibiotik, sterilitas, cemaran mikroba)...">
+    </div>
+    <div class="count-pill" id="rowCount">8 Parameter</div>
+  </div>
+
+  <div class="table-wrap">
+    <div class="table-scroll">
+      <table id="tarifTable">
+        <thead>
+          <tr>
+            <th class="col-no">No.</th>
+            <th>Jenis Penerimaan Negara Bukan Pajak</th>
+            <th class="col-satuan">Satuan</th>
+            <th class="col-tarif">Tarif</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-no">1</td><td>Uji potensi antibiotik</td><td class="col-satuan">Per Pengujian</td><td class="col-tarif">Rp 732.518,00</td></tr>
+          <tr><td class="col-no">2</td><td>Uji sterilitas</td><td class="col-satuan">Per Pengujian</td><td class="col-tarif">Rp 1.763.243,00</td></tr>
+          <tr><td class="col-no">3</td><td>Uji cemaran mikroba metode kualitatif produk non pangan (obat, suplemen Kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td><td class="col-satuan">Per Pengujian</td><td class="col-tarif">Rp 694.576,00</td></tr>
+          <tr><td class="col-no">4</td><td>Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk non pangan (obat, suplemen kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td><td class="col-satuan">Per Pengujian</td><td class="col-tarif">Rp 518.980,00</td></tr>
+          <tr><td class="col-no">5</td><td>Uji cemaran mikroba metode kualitatif produk pangan (1-3x pengujian)</td><td class="col-satuan">Per Pengujian</td><td class="col-tarif">Rp 728.741,00</td></tr>
+          <tr><td class="col-no">6</td><td>Uji cemaran mikroba metode kualitatif produk pangan (4x pengujian atau lebih)</td><td class="col-satuan">1-4 Sampel per Parameter Uji</td><td class="col-tarif">Rp 1.642.350,00</td></tr>
+          <tr><td class="col-no">7</td><td>Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (1-3x pengujian)</td><td class="col-satuan">5-10 Sampel per Parameter Uji</td><td class="col-tarif">Rp 669.480,00</td></tr>
+          <tr><td class="col-no">8</td><td>Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk pangan (4x pengujian atau lebih)</td><td class="col-satuan">1-4 Sampel per Parameter Uji</td><td class="col-tarif">Rp 1.154.627,00</td></tr>
+        </tbody>
+      </table>
+      <div class="empty" id="emptyMsg">Parameter tidak ditemukan.</div>
+    </div>
+  </div>
+
+  <footer>© Balai POM di Ambon · SI TARIF</footer>
+</main>
+<script>
+const input=document.getElementById('searchInput'),rows=document.querySelectorAll('#tarifTable tbody tr'),count=document.getElementById('rowCount'),empty=document.getElementById('emptyMsg');
+input.addEventListener('input',()=>{const q=input.value.toLowerCase();let v=0;rows.forEach(r=>{const m=r.textContent.toLowerCase().includes(q);r.style.display=m?'':'none';if(m)v++});count.textContent=v+' Parameter';empty.style.display=v?'none':'block'});
+</script>
+</body>
+</html>

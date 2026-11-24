@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampel KP | SI TARIF Balai POM di Ambon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#0a4d9b;--dark:#07366f;--light:#eaf3ff;--muted:#68798d}
+body{min-height:100vh;font-family:Poppins,sans-serif;color:#18324f;padding:28px 18px 40px;background:linear-gradient(135deg,rgba(239,246,255,.96),rgba(248,250,255,.94)),url('bg-lab.png') center/cover fixed}
+.page{max-width:1040px;width:100%;margin:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:54px;height:54px;object-fit:contain}
+.brand-name{font-size:15px;font-weight:700;color:var(--dark)}
+.brand-sub{font-size:11px;color:var(--muted)}
+.btn-back{text-decoration:none;background:#ffffff;color:var(--dark);border:1px solid #d5e3f5;padding:9px 16px;border-radius:10px;font-size:12.5px;font-weight:600;transition:.2s}
+.btn-back:hover{background:var(--light)}
+.box{background:rgba(255,255,255,.97);border:1px solid #e2ebf5;border-radius:20px;padding:26px;box-shadow:0 12px 30px rgba(15,23,42,.08);margin-bottom:22px}
+.box h1{font-size:22px;color:var(--dark);margin-bottom:6px}
+.box p.desc{font-size:13px;color:var(--muted);margin-bottom:18px}
+.submenu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.submenu-card{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid #dce9f8;border-radius:14px;background:#f8fbff;text-decoration:none;color:inherit;transition:.2s}
+.submenu-card:hover{transform:translateY(-2px);border-color:#93c0f2;background:#eef6ff}
+.submenu-card h3{font-size:15px;color:var(--dark);margin-bottom:3px}
+.submenu-card span{font-size:12px;color:var(--muted)}
+.arrow{font-size:22px;color:var(--blue)}
+.table-wrap{width:100%;overflow-x:auto;border:1px solid #e2e8f0;border-radius:12px;margin-top:12px}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+  background: #fff;
+}
+
+thead th {
+  background: linear-gradient(135deg, #0f4c81 0%, #1665a8 100%);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #0b3961;
+}
+
+tbody td {
+  padding: 11px 12px;
+  font-size: 13px;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  vertical-align: middle;
+}
+
+.merged-cell {
+  background: #f8fbff;
+  border: 1px solid #cbd5e1;
+  vertical-align: middle;
+}
+input[type="checkbox"]{width:18px;height:18px;accent-color:#0f4c81;cursor:pointer}
+.summary-bar{margin-top:16px;padding:14px 18px;background:#f1f5f9;border-left:4px solid #0f4c81;border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.total{font-size:15.5px;font-weight:700;color:#0f172a}
+.total span{color:#0f4c81;font-size:18px}
+.btn-reset{background:#fff;border:1px solid #cbd5e1;color:#334155;padding:8px 14px;border-radius:8px;font-family:Poppins,sans-serif;font-size:12.5px;font-weight:500;cursor:pointer}
+.btn-reset:hover{background:#e2e8f0}
+@media(max-width:650px){.submenu-grid{grid-template-columns:1fr}.box{padding:18px}}
+</style>
+</head>
+<script>sessionStorage.setItem('sitarif_visited_subpage', '1');</script>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo-bpom.png" alt="Logo BPOM">
+      <div>
+        <div class="brand-name">BALAI POM DI AMBON</div>
+        <div class="brand-sub">Tarif Pengujian Sampel NAPZA</div>
+      </div>
+    </div>
+    <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+  </header>
+
+  <section class="box">
+    <h1>Tarif Pengujian Sampel NAPZA</h1>
+    <p class="desc">Pilih atau centang parameter uji untuk mengestimasi total tarif pengujian.</p>
+
+
+    <div class="table-wrap">
+      <table id="kpTable">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Sampel</th>
+            <th>Parameter Uji</th>
+            <th>Metode Uji</th>
+            <th>Tarif Per-Pengujian</th>
+            <th>Pilih</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="4" class="merged-cell merged-no">1</td>
+            <td rowspan="4" class="merged-cell merged-sample">Metamfetamin</td>
+            <td>Organoleptik</td>
+            <td>Fisika 1: Uji Organoleptik/makroskopik/mikrokopik/keseragaman bobot/uji zat larut dalam air/benda asing/bagian yang tidak larut air/uji suhu lebur/jarak lebur dengan pipa kapiler/uji bobot jenis/uji suhu beku/uji isi minimum/uji partikel logam (dalam salep mata)/uji bobot tuntas/uji volume terpindahkan/uji kejernihan larutan/uji penetapan volume injeksi dalam wadah/uji rotasi optik/uji kekentalan</td>
+            <td>Rp 31.257</td>
+            <td><input type="checkbox" class="kp-cb" data-price="31257"></td>
+          </tr>
+          <tr>
+            <td>Identifikasi Metamfetamin</td>
+            <td>Kimia 1: Uji reaksi warna</td>
+            <td>Rp 90.190</td>
+            <td><input type="checkbox" class="kp-cb" data-price="90190"></td>
+          </tr>
+          <tr>
+            <td>Identifikasi Metamfetamin</td>
+            <td>Kimia 11: Uji spektrofotometri UV-Vis/Infra merah</td>
+            <td>Rp 731.922</td>
+            <td><input type="checkbox" class="kp-cb" data-price="731922"></td>
+          </tr>
+          <tr>
+            <td>Identifikasi Metamfetamin</td>
+            <td>Fisika-Kimia 2: Uji kromatografi lapis tipis</td>
+            <td>Rp 389.738</td>
+            <td><input type="checkbox" class="kp-cb" data-price="389738"></td>
+          </tr>
+          <tr>
+            <td rowspan="5" class="merged-cell merged-no">2</td>
+            <td rowspan="5" class="merged-cell merged-sample">Ganja</td>
+            <td>Organoleptik</td>
+            <td>Fisika 1: Uji Organoleptik/makroskopik/mikrokopik/keseragaman bobot/uji zat larut dalam air/benda asing/bagian yang tidak larut air/uji suhu lebur/jarak lebur dengan pipa kapiler/uji bobot jenis/uji suhu beku/uji isi minimum/uji partikel logam (dalam salep mata)/uji bobot tuntas/uji volume terpindahkan/uji kejernihan larutan/uji penetapan volume injeksi dalam wadah/uji rotasi optik/uji kekentalan</td>
+            <td>Rp 31.257</td>
+            <td><input type="checkbox" class="kp-cb" data-price="31257"></td>
+          </tr>
+          <tr>
+            <td>Mikroskopis</td>
+            <td>Fisika 1: Uji Organoleptik/makroskopik/mikrokopik/keseragaman bobot/uji zat larut dalam air/benda asing/bagian yang tidak larut air/uji suhu lebur/jarak lebur dengan pipa kapiler/uji bobot jenis/uji suhu beku/uji isi minimum/uji partikel logam (dalam salep mata)/uji bobot tuntas/uji volume terpindahkan/uji kejernihan larutan/uji penetapan volume injeksi dalam wadah/uji rotasi optik/uji kekentalan</td>
+            <td>Rp 31.257</td>
+            <td><input type="checkbox" class="kp-cb" data-price="31257"></td>
+          </tr>
+          <tr>
+            <td>Identifikasi Ganja</td>
+            <td>Kimia 1: Uji reaksi warna</td>
+            <td>Rp 90.190</td>
+            <td><input type="checkbox" class="kp-cb" data-price="90190"></td>
+          </tr>
+          <tr>
+            <td>Identifikasi Ganja</td>
+            <td>Kimia 11: Uji spektrofotometri UV-Vis/Infra merah</td>
+            <td>Rp 731.922</td>
+            <td><input type="checkbox" class="kp-cb" data-price="731922"></td>
+          </tr>
+          <tr>
+            <td>Identifikasi Ganja</td>
+            <td>Fisika-Kimia 2: Uji kromatografi lapis tipis</td>
+            <td>Rp 389.738</td>
+            <td><input type="checkbox" class="kp-cb" data-price="389738"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="summary-bar">
+      <div class="total">Estimasi Total Tarif Pengujian: Rp <span id="total">0</span></div>
+      <button type="button" class="btn-reset" id="btnReset">Reset Pilihan</button>
+    </div>
+  </section>
+</main>
+
+<script>
+let total = 0;
+document.querySelectorAll('.kp-cb').forEach(cb => {
+  cb.addEventListener('change', e => {
+    const price = parseInt(e.target.dataset.price, 10) || 0;
+    const row = e.target.closest('tr');
+    if (e.target.checked) {
+      total += price;
+      row.classList.add('selected-row');
+    } else {
+      total -= price;
+      row.classList.remove('selected-row');
+    }
+    document.getElementById('total').textContent = total.toLocaleString('id-ID');
+  });
+});
+
+document.getElementById('btnReset').addEventListener('click', () => {
+  total = 0;
+  document.querySelectorAll('.kp-cb').forEach(cb => {
+    cb.checked = false;
+    cb.closest('tr').classList.remove('selected-row');
+  });
+  document.getElementById('total').textContent = '0';
+});
+</script>
+</body>
+</html>

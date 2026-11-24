@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampel Farmasi | SI TARIF Balai POM di Ambon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#0a4d9b;--dark:#07366f;--light:#eaf3ff;--muted:#68798d}
+body{min-height:100vh;font-family:Poppins,sans-serif;color:#18324f;padding:28px 18px 40px;background:linear-gradient(135deg,rgba(239,246,255,.96),rgba(248,250,255,.94)),url('bg-lab.png') center/cover fixed}
+.page{max-width:1040px;width:100%;margin:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:54px;height:54px;object-fit:contain}
+.brand-name{font-size:15px;font-weight:700;color:var(--dark)}
+.brand-sub{font-size:11px;color:var(--muted)}
+.btn-back{text-decoration:none;background:#ffffff;color:var(--dark);border:1px solid #d5e3f5;padding:9px 16px;border-radius:10px;font-size:12.5px;font-weight:600;transition:.2s}
+.btn-back:hover{background:var(--light)}
+.box{background:rgba(255,255,255,.97);border:1px solid #e2ebf5;border-radius:20px;padding:26px;box-shadow:0 12px 30px rgba(15,23,42,.08);margin-bottom:22px}
+.box h1{font-size:22px;color:var(--dark);margin-bottom:6px}
+.box p.desc{font-size:13px;color:var(--muted);margin-bottom:18px}
+.submenu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.submenu-card{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid #dce9f8;border-radius:14px;background:#f8fbff;text-decoration:none;color:inherit;transition:.2s}
+.submenu-card:hover{transform:translateY(-2px);border-color:#93c0f2;background:#eef6ff}
+.submenu-card h3{font-size:15px;color:var(--dark);margin-bottom:3px}
+.submenu-card span{font-size:12px;color:var(--muted)}
+.arrow{font-size:22px;color:var(--blue)}
+.table-wrap{width:100%;overflow-x:auto;border:1px solid #e2e8f0;border-radius:12px;margin-top:12px}
+table{width:100%;border-collapse:collapse;min-width:820px;table-layout:fixed;background:#fff}
+.col-no{width:54px}
+.col-sample{width:170px}
+.col-param{width:175px}
+.col-method{width:211px}
+.col-price{width:140px}
+.col-check{width:70px}
+thead th{background:linear-gradient(135deg,#0f4c81 0%,#1665a8 100%);color:#fff;font-size:12.5px;font-weight:600;padding:12px;text-align:left}
+thead th.center{text-align:center}
+thead th.right{text-align:right}
+tbody td{padding:11px 12px;font-size:13px;color:#334155;border-bottom:1px solid #e2e8f0;vertical-align:middle}
+tbody td.method-cell{overflow-wrap:anywhere;word-break:break-word}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td:not(.merged-cell){background:#eef6ff}
+tbody tr.selected-row td:not(.merged-cell){background:#e0f2fe}
+.merged-cell{background:#f8fbff;border-right:1px solid #e2e8f0;vertical-align:middle}
+.merged-no{text-align:center;font-weight:600;color:#475569}
+.merged-sample{font-weight:600;color:#0f4c81}
+tbody td.price-cell{text-align:right;font-weight:600;color:#0f4c81;white-space:nowrap}
+tbody td.check-cell{text-align:center}
+input[type="checkbox"]{width:18px;height:18px;accent-color:#0f4c81;cursor:pointer}
+.summary-bar{margin-top:16px;padding:14px 18px;background:#f1f5f9;border-left:4px solid #0f4c81;border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.total{font-size:15.5px;font-weight:700;color:#0f172a}
+.total span{color:#0f4c81;font-size:18px}
+.btn-reset{background:#fff;border:1px solid #cbd5e1;color:#334155;padding:8px 14px;border-radius:8px;font-family:Poppins,sans-serif;font-size:12.5px;font-weight:500;cursor:pointer}
+.btn-reset:hover{background:#e2e8f0}
+@media(max-width:650px){.submenu-grid{grid-template-columns:1fr}.box{padding:18px}}
+</style>
+</head>
+<script>sessionStorage.setItem('sitarif_visited_subpage', '1');</script>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo-bpom.png" alt="Logo BPOM">
+      <div>
+        <div class="brand-name">BALAI POM DI AMBON</div>
+        <div class="brand-sub">Tarif Pengujian Sampel Obat Bahan Alam (OBA)</div>
+      </div>
+    </div>
+    <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+  </header>
+
+  <section class="box">
+    <h1>Tarif Pengujian Sampel Obat Bahan Alam</h1>
+    <p class="desc">Pilih atau centang parameter uji untuk mengestimasi total tarif pengujian.</p>
+
+
+    <div class="table-wrap">
+      <table id="farmasiTable">
+        <colgroup>
+          <col class="col-no">
+          <col class="col-sample">
+          <col class="col-param">
+          <col class="col-method">
+          <col class="col-price">
+          <col class="col-check">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="center">No</th>
+            <th>Sampel</th>
+            <th>Parameter Uji</th>
+            <th>Metode Uji</th>
+            <th class="right">Tarif Per-Pengujian</th>
+            <th class="center">Pilih</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3" class="merged-cell merged-no">1</td>
+            <td rowspan="3" class="merged-cell merged-sample">Cairan Obat Luar (Minyak)</td>
+            <td>Angka Lempeng Total (ALT)</td>
+            <td class="method-cell">Mikrobiologi 4: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk non pangan (obat, suplemen kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 518.980</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="518980"></td>
+          </tr>
+          <tr>
+            <td>Pseudomonas aeruginosa</td>
+            <td class="method-cell">Mikrobiologi 3: Uji cemaran mikroba metode kualitatif produk non pangan (obat, suplemen Kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 694.576</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="694576"></td>
+          </tr>
+          <tr>
+            <td>Staphylococcus aureus</td>
+            <td class="method-cell">Mikrobiologi 3: Uji cemaran mikroba metode kualitatif produk non pangan (obat, suplemen Kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 694.576</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="694576"></td>
+          </tr>
+          <tr>
+            <td rowspan="4" class="merged-cell merged-no">2</td>
+            <td rowspan="4" class="merged-cell merged-sample">Cairan Obat Luar (Non-Minyak)</td>
+            <td>Angka Lempeng Total (ALT)</td>
+            <td class="method-cell">Mikrobiologi 4: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk non pangan (obat, suplemen kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 518.980</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="518980"></td>
+          </tr>
+          <tr>
+            <td>Angka Kapang dan Khamir (AKK)</td>
+            <td class="method-cell">Mikrobiologi 4: Uji cemaran mikroba metode kuantitatif/semi kuantitatif produk non pangan (obat, suplemen kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 518.980</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="518980"></td>
+          </tr>
+          <tr>
+            <td>Pseudomonas aeruginosa</td>
+            <td class="method-cell">Mikrobiologi 3: Uji cemaran mikroba metode kualitatif produk non pangan (obat, suplemen Kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 694.576</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="694576"></td>
+          </tr>
+          <tr>
+            <td>Staphylococcus aureus</td>
+            <td class="method-cell">Mikrobiologi 3: Uji cemaran mikroba metode kualitatif produk non pangan (obat, suplemen Kesehatan, OBA (Obat Bahan Alam), obat kuasi, dan kosmetik)</td>
+            <td class="price-cell">Rp 694.576</td>
+            <td class="check-cell"><input type="checkbox" class="farmasi-cb" data-price="694576"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="summary-bar">
+      <div class="total">Estimasi Total Tarif Pengujian: Rp <span id="total">0</span></div>
+      <button type="button" class="btn-reset" id="btnReset">Reset Pilihan</button>
+    </div>
+  </section>
+</main>
+
+<script>
+let total = 0;
+document.querySelectorAll('.farmasi-cb').forEach(cb => {
+  cb.addEventListener('change', e => {
+    const price = parseInt(e.target.dataset.price, 10) || 0;
+    const row = e.target.closest('tr');
+    if (e.target.checked) {
+      total += price;
+      row.classList.add('selected-row');
+    } else {
+      total -= price;
+      row.classList.remove('selected-row');
+    }
+    document.getElementById('total').textContent = total.toLocaleString('id-ID');
+  });
+});
+
+document.getElementById('btnReset').addEventListener('click', () => {
+  total = 0;
+  document.querySelectorAll('.farmasi-cb').forEach(cb => {
+    cb.checked = false;
+    cb.closest('tr').classList.remove('selected-row');
+  });
+  document.getElementById('total').textContent = '0';
+});
+</script>
+</body>
+</html>
