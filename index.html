@@ -1,150 +1,291 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Si Tarif: Tarif Pengujian Laboratorium Balai POM di Ambon</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px;  align-items: center; display: flex; flex-direction: column; }
-	h2 { margin-bottom: 15px; text-align: center; }
-    table { width: 80%; border-collapse: collapse; margin-top: 20px; text-align: center; vertical-align: left; }
-    th, td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; }
-    th { background: #f5f5f5; text-align: center; }
-	th:nth-child(2), td:nth-child(2){ text-align: left; }
-	th:last-child, td:last-child { text-align: center; vertical-align: middle; }
-	td:last-child button { display: inline-block; margin: 0 auto; }
-	button { padding: 5px 12px; font-weight: bold; background-color: darkblue; color: white; border: none; border-radius: 4px; cursor: pointer; }
-	button:hover { background-color: darkblue; }
-	@media (max-width: 600px) {
-    h2 {
-      font-size: 18px;
-    }
-    table {
-      font-size: 12px;
-    }
-  </style>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SI TARIF | Balai POM di Ambon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-body {
-    background-image: url("bg-lab.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    font-family: Arial, sans-serif;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#0a4d9b;--dark:#07366f;--light:#eaf3ff;--muted:#68798d}
+body{min-height:100vh;font-family:Poppins,sans-serif;color:#18324f;padding:28px 18px 40px;background:linear-gradient(135deg,rgba(239,246,255,.96),rgba(248,250,255,.94)),url('bg-lab.png') center/cover fixed}
+.page{max-width:1120px;width:100%;margin:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand-name{font-size:15px;font-weight:700;color:var(--dark)}
+.brand-sub{font-size:11px;color:var(--muted)}
+.top-label{color:var(--blue);background:white;border:1px solid #dce9f8;padding:8px 14px;border-radius:30px;font-size:12px;font-weight:600}
+.hero{position:relative;overflow:hidden;border-radius:26px;padding:48px 34px;color:white;background:linear-gradient(120deg,#07366f,#0a4d9b 58%,#2877c8);box-shadow:0 18px 45px rgba(7,54,111,.18)}
+.hero:after{content:"";position:absolute;width:310px;height:310px;border:1px solid #ffffff24;border-radius:50%;right:-75px;top:-145px;box-shadow:0 0 0 35px #ffffff0a,0 0 0 75px #ffffff08}
+.hero-content{position:relative;z-index:1;max-width:700px}
+.eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:1.4px;color:#d8eaff;background:#ffffff1f;border:1px solid #ffffff30;border-radius:30px;padding:7px 13px;margin-bottom:17px}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.12;font-weight:800}
+.hero p{color:#e5f0ff;font-size:15px;line-height:1.8;margin-top:14px;max-width:620px}
+.section-heading{margin:34px 0 17px}
+.section-heading h2{font-size:21px;color:var(--dark)}
+.section-heading p{font-size:13px;color:var(--muted);margin-top:4px}
+.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.menu-card{display:flex;align-items:center;gap:18px;min-height:142px;padding:23px;text-decoration:none;color:inherit;background:#fffffff5;border:1px solid #e2ebf5;border-radius:19px;box-shadow:0 8px 24px #1942700e;transition:.22s}
+.menu-card:hover{transform:translateY(-4px);border-color:#a9c9ef;box-shadow:0 15px 30px #1942701f}
+.menu-icon{flex:0 0 62px;width:62px;height:62px;display:grid;place-items:center;border-radius:17px;color:var(--blue);background:var(--light)}
+.menu-icon svg{width:30px;height:30px}
+.menu-text{flex:1}
+.menu-text h3{color:var(--dark);font-size:16px;margin-bottom:5px}
+.menu-text p{color:var(--muted);font-size:12px;line-height:1.6}
+.arrow{color:#7c9fc7;font-size:25px}
+.note{margin-top:22px;padding:14px 17px;border-radius:13px;background:#ffffffb8;border:1px solid #e2ebf5;color:var(--muted);font-size:11px;line-height:1.7}
+footer{text-align:center;color:#8190a2;font-size:11px;margin-top:27px}
+@media(max-width:650px){body{padding:16px 12px 28px}.topbar{align-items:flex-start}.top-label{font-size:10px}.brand img{width:48px;height:48px}.hero{padding:35px 23px;border-radius:21px}.hero p{font-size:13px}.menu-grid{grid-template-columns:1fr;gap:12px}.menu-card{min-height:118px;padding:18px}.section-heading h2{font-size:19px}}
 
-.main-container {
-  max-width: 900px;
-  width: 95%;
-  margin: auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th {
-  text-align: center;
-}
-
-.header-container {
-  text-align: center;
-}
-  #searchInput { width: 300px; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
-  .btn { background-color: darkblue; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; }
+/* Modal Rating Emot Ekspresi & Masukan */
+.rating-backdrop{position:fixed;inset:0;background:rgba(7,54,111,.45);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:16px;z-index:999}
+.rating-backdrop.show{display:flex}
+.rating-modal{width:100%;max-width:460px;background:#fff;border-radius:22px;padding:24px 22px;box-shadow:0 20px 50px rgba(7,54,111,.25);border:1px solid #e2ebf5;text-align:center;position:relative;max-height:92vh;overflow-y:auto}
+.rating-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:1px solid #e2ebf5;background:#f8fafc;color:#475569;font-size:18px;line-height:1;cursor:pointer}
+.rating-close:hover{background:#eef4fb;color:#0f172a}
+.rating-badge{display:inline-block;font-size:11px;font-weight:600;color:var(--blue);background:var(--light);padding:5px 12px;border-radius:20px;margin-bottom:10px}
+.rating-modal h3{font-size:18px;color:var(--dark);margin-bottom:6px}
+.rating-modal p.intro{font-size:12.5px;color:var(--muted);line-height:1.65;margin-bottom:16px}
+.emoji-rating-group{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-bottom:12px}
+.emoji-option{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:9px 4px;border-radius:14px;border:1.5px solid #e2ebf5;background:#f8fafc;cursor:pointer;transition:.18s;user-select:none;font-family:Poppins,sans-serif}
+.emoji-option .emo{font-size:26px;line-height:1}
+.emoji-option .emo-caption{font-size:10px;font-weight:600;color:#475569;line-height:1.25;text-align:center}
+.emoji-option:hover{transform:translateY(-2px);background:#f4f9ff;border-color:#9bc2ee}
+.emoji-option.active{transform:translateY(-2px);background:#eaf3ff;border-color:var(--blue);box-shadow:0 8px 18px rgba(10,77,155,.15)}
+.emoji-option.active .emo-caption{color:var(--dark)}
+.rating-label{font-size:12px;font-weight:600;color:var(--blue);min-height:18px;margin-bottom:12px}
+.feedback-box{text-align:left;margin-bottom:12px}
+.feedback-box label{display:block;font-size:12px;font-weight:600;color:var(--dark);margin-bottom:6px}
+.feedback-box textarea{width:100%;min-height:76px;resize:vertical;padding:10px 12px;border:1.5px solid #dce6f2;border-radius:12px;font-family:Poppins,sans-serif;font-size:12.5px;color:#18324f;background:#f9fbfe;outline:none;transition:.18s}
+.feedback-box textarea:focus{background:#fff;border-color:var(--blue);box-shadow:0 0 0 3px rgba(10,77,155,.1)}
+.feedback-hint{font-size:11px;color:var(--muted);margin-top:4px}
+.rating-status{font-size:12px;font-weight:500;color:var(--blue);min-height:18px;margin-bottom:10px}
+.rating-actions{display:flex;gap:10px;justify-content:center}
+.btn-rating-submit{background:var(--blue);color:#fff;border:none;padding:10px 22px;border-radius:11px;font-family:Poppins,sans-serif;font-size:13px;font-weight:600;cursor:pointer}
+.btn-rating-submit:disabled{opacity:.45;cursor:not-allowed}
+.btn-rating-submit:not(:disabled):hover{background:var(--dark)}
+.btn-rating-later{background:#f1f5f9;color:#334155;border:1px solid #cbd5e1;padding:10px 16px;border-radius:11px;font-family:Poppins,sans-serif;font-size:13px;font-weight:500;cursor:pointer}
+.btn-rating-later:hover{background:#e2e8f0}
+@media(max-width:460px){.emoji-rating-group{gap:4px}.emoji-option .emo{font-size:22px}.emoji-option .emo-caption{font-size:9px}}
 </style>
-
+</head>
 <body>
-<div class="main-container">
-<div class="header-container">
-  <img src="logo-bpom.png.png" alt="logo-bpom" style="width:120px;">
-  <h2>Tarif Pengujian Laboratorium Balai POM di Ambon</h2>
-  <p><em>Pilih parameter untuk menghitung biaya uji</em></p>
-  <input type="text" id="searchInput" placeholder="Cari nama sampel..." onkeyup="searchTable()">
-   <div style="margin-top: 10px; text-align:left; font-size:13px; margin-left: 50px; margin-right: 50px">
-   <br>Tarif berdasarkan:
-   </div>
-   <div style="margin-top: 2px; text-align:left; font-size:13px; margin-left: 50px; margin-right: 50px">
-   <p>Keputusan Kepala BPOM No. 489 Tahun 2024 tentang Penetapan Tarif atas Jenis Penerimaan Negara Bukan Pajak yang Bersifat Volatil untuk Jasa Pengujian</p>
-   </div>
+<main class="page">
+<header class="topbar">
+  <div class="brand">
+    <img src="logo-bpom.png" alt="Logo BPOM">
+    <div><div class="brand-name">BALAI POM DI AMBON</div><div class="brand-sub">Layanan Informasi Pengujian</div></div>
+  </div>
+  <div class="top-label">PORTAL LAYANAN</div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">SISTEM INFORMASI TERINTEGRASI</span>
+    <h1>SI TARIF</h1>
+    <p>Sistem Informasi Tarif Pengujian Laboratorium. Temukan informasi tarif pengujian berdasarkan jenis sampel maupun parameter pengujian dengan lebih mudah.</p>
+    <p>Tarif pengujian sesuai Kepka BPOM Nomor 489 Tahun 2024 dan PerBPOM No. 1 Tahun 2025 tentang Petunjuk Teknis Pengelolaan Dana BOK.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-heading">
+    <h2>Pilih Layanan</h2>
+    <p>Silakan pilih kategori layanan yang ingin Anda akses.</p>
+  </div>
+  <div class="menu-grid">
+    <a class="menu-card" href="pangan.html">
+      <span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16M6 10l1 10h10l1-10M8 10V6a4 4 0 0 1 8 0v4M9 15h6"/></svg></span>
+      <span class="menu-text"><h3>Sampel Pangan</h3><p>Informasi tarif pengujian untuk sampel pangan.</p></span><span class="arrow">›</span>
+    </a>
+    <a class="menu-card" href="kp.html">
+      <span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3z"/><path d="M8.5 12l2.2 2.2 4.8-5"/></svg></span>
+      <span class="menu-text"><h3>Sampel KP</h3><p>Informasi tarif pengujian untuk sampel KP.</p></span><span class="arrow">›</span>
+    </a>
+    <a class="menu-card" href="farmasi.html">
+      <span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 3.5l-7 7a5 5 0 0 0 7 7l7-7a5 5 0 0 0-7-7z"/><path d="M7 7l10 10M13 4l7 7"/></svg></span>
+      <span class="menu-text"><h3>Sampel Farmasi</h3><p>Informasi tarif pengujian untuk sampel farmasi.</p></span><span class="arrow">›</span>
+    </a>
+    <a class="menu-card" href="tarif-parameter.html">
+      <span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2m4 0h2M8 15h2m4 0h2M8 18h8"/></svg></span>
+      <span class="menu-text"><h3>Tarif Per-Parameter</h3><p>Cari informasi tarif berdasarkan parameter pengujian.</p></span><span class="arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<div class="note"><strong>Informasi:</strong> Pilih salah satu kategori layanan di atas untuk melihat informasi tarif pengujian. Halaman kategori akan dihubungkan secara bertahap.</div>
+<footer>© Balai POM di Ambon · SI TARIF</footer>
+
+<div class="rating-backdrop" id="ratingModal" role="dialog" aria-modal="true" aria-labelledby="ratingTitle">
+  <div class="rating-modal">
+    <button type="button" class="rating-close" id="closeRatingBtn" aria-label="Tutup">&times;</button>
+    <span class="rating-badge">KAMI SENANG MENDENGAR MASUKAN ANDA</span>
+    <h3 id="ratingTitle">Bagaimana pengalaman Anda memakai SI TARIF?</h3>
+    <p class="intro">Terima kasih sudah berkunjung!</p>
+
+    <div class="emoji-rating-group" id="emojiRatingGroup">
+      <button type="button" class="emoji-option" data-value="1" data-emoji="😞" data-label="Belum Puas" aria-label="1 - Belum Puas">
+        <span class="emo">😞</span>
+        <span class="emo-caption">Belum Puas</span>
+      </button>
+      <button type="button" class="emoji-option" data-value="2" data-emoji="😕" data-label="Kurang Puas" aria-label="2 - Kurang Puas">
+        <span class="emo">😕</span>
+        <span class="emo-caption">Kurang Puas</span>
+      </button>
+      <button type="button" class="emoji-option" data-value="3" data-emoji="🙂" data-label="Cukup Puas" aria-label="3 - Cukup Puas">
+        <span class="emo">🙂</span>
+        <span class="emo-caption">Cukup Puas</span>
+      </button>
+      <button type="button" class="emoji-option" data-value="4" data-emoji="😄" data-label="Puas" aria-label="4 - Puas">
+        <span class="emo">😄</span>
+        <span class="emo-caption">Puas</span>
+      </button>
+      <button type="button" class="emoji-option" data-value="5" data-emoji="🤩" data-label="Sangat Puas" aria-label="5 - Sangat Puas">
+        <span class="emo">🤩</span>
+        <span class="emo-caption">Sangat Puas</span>
+      </button>
+    </div>
+
+    <div class="rating-label" id="ratingLabel">Silakan pilih salah satu ekspresi di atas</div>
+
+    <div class="feedback-box">
+      <label for="feedbackInput">Kritik &amp; Masukan untuk SI TARIF (Opsional)</label>
+      <textarea id="feedbackInput" maxlength="500" placeholder="Ceritakan pengalaman Anda atau saran perbaikan agar layanan SI TARIF semakin mudah digunakan..."></textarea>
+      <div class="feedback-hint">Setiap masukan sangat berarti bagi kami untuk terus meningkatkan layanan.</div>
+    </div>
+
+    <div class="rating-status" id="ratingStatus"></div>
+
+    <div class="rating-actions">
+      <button type="button" class="btn-rating-later" id="laterRatingBtn">Nanti Saja</button>
+      <button type="button" class="btn-rating-submit" id="submitRatingBtn" disabled>Kirim Masukan</button>
+    </div>
+  </div>
 </div>
-  <table id="sampleTable">
-    <thead>
-      <tr><th>No</th><th>Nama Sampel</th><th>Parameter Pengujian</th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-	</div>
-  <script src="https://bspjiambon.id/assets/js/jquery.js"></script>
-<script src="https://bspjiambon.id/assets/js/bootstrap.min.js"></script>
-  <script>
-   const samples = [
-            { "id_sample": 1, "name": "Air Minum Isi Ulang (AMIU)" },
-            { "id_sample": 2, "name": "Abon Ikan" },
-            { "id_sample": 3, "name": "Abon Kepiting" },
-            { "id_sample": 4, "name": "Dendeng Ikan" },
-            { "id_sample": 5, "name": "Ikan Asap" },
-            { "id_sample": 6, "name": "Ikan Teri" },
-            { "id_sample": 7, "name": "Keripik Ikan" },
-            { "id_sample": 8, "name": "Sambal Goreng Ikan" },
-            { "id_sample": 9, "name": "Kacang Goreng" },
-            { "id_sample": 10, "name": "Kacang Bersalut" },
-            { "id_sample": 11, "name": "Kacang Gula" },
-            { "id_sample": 12, "name": "Keripik Pisang" },
-            { "id_sample": 13, "name": "Keripik Singkong" },
-            { "id_sample": 14, "name": "Keripik Pangsit" },
-            { "id_sample": 15, "name": "Brownies Enbal" },
-            { "id_sample": 16, "name": "Enbal Lempeng" },
-            { "id_sample": 17, "name": "Kukis" },
-            { "id_sample": 18, "name": "Pia" },
-            { "id_sample": 19, "name": "Rempeyek" },
-            { "id_sample": 20, "name": "Roti Daging" },
-            { "id_sample": 21, "name": "Roti Keju Cokelat" },
-            { "id_sample": 22, "name": "Roti Pisang Cokelat" },
-            { "id_sample": 23, "name": "Roti Keju" },
-            { "id_sample": 24, "name": "Roti Kacang" },
-            { "id_sample": 25, "name": "Gula Kapas" },
-            { "id_sample": 26, "name": "Gula Merah" },
-            { "id_sample": 27, "name": "Kopi dan Teh Kering" },
-            { "id_sample": 28, "name": "Pangan Jajan Anak Sekolah (PJAS)" }
-        ];
-    fetch('data.json')
-    .then(res => res.json())
-    .then(data => {
-      const tbody = document.querySelector('#sampleTable tbody');
-      data.samples.forEach((s, i) => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${i+1}</td>
-          <td>${s.name}</td>
-          <td><button onclick="goDetail(${s.id_sample})">Pilih Parameter</button></td>`;
-        tbody.appendChild(tr);
-      });
-    });
+</main>
 
-  function goDetail(id) {
-    window.location.href = `detail.html?sample=${id}`;
+<script>
+(function () {
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwXgFbAgmo78mOo1WGi7fb8-cLb0fO80u8TByc_Dls2zpzWD7xw6We8zEG3X_Jh_beu/exec';
+  const VISITED_KEY = 'sitarif_visited_subpage';
+  const RATED_SESSION_KEY = 'sitarif_rated_this_session';
+
+  const modal = document.getElementById('ratingModal');
+  const options = Array.from(document.querySelectorAll('.emoji-option'));
+  const labelEl = document.getElementById('ratingLabel');
+  const feedbackEl = document.getElementById('feedbackInput');
+  const statusEl = document.getElementById('ratingStatus');
+  const submitBtn = document.getElementById('submitRatingBtn');
+  const closeBtn = document.getElementById('closeRatingBtn');
+  const laterBtn = document.getElementById('laterRatingBtn');
+
+  if (!modal) return;
+
+  let selected = null;
+  let modalScheduled = false;
+
+  function setSelection(opt) {
+    selected = {
+      rating_value: Number(opt.dataset.value),
+      emoji: opt.dataset.emoji,
+      label: opt.dataset.label
+    };
+    options.forEach(btn => btn.classList.toggle('active', btn === opt));
+    if (labelEl) {
+      labelEl.textContent = `Pilihan Anda: ${selected.emoji} ${selected.label} (${selected.rating_value}/5)`;
+    }
+    if (statusEl) statusEl.textContent = '';
+    if (submitBtn) submitBtn.disabled = false;
   }
-   function searchTable() {
-            const input = document.getElementById("searchInput").value.toLowerCase();
-            const rows = document.querySelectorAll("#sampleTable tbody tr");
-            
-            rows.forEach(row => {
-                const sampleName = row.cells[1].textContent.toLowerCase();
-                if (sampleName.includes(input)) {
-                    row.style.display = "";
-                } else {
-                    row.style.display = "none";
-                }
-            });
-        }
 
-  </script>
+  options.forEach(opt => {
+    opt.addEventListener('click', () => setSelection(opt));
+  });
+
+  function openModal() {
+    modalScheduled = false;
+    selected = null;
+    options.forEach(btn => btn.classList.remove('active'));
+    if (labelEl) labelEl.textContent = 'Silakan pilih salah satu ekspresi di atas';
+    if (feedbackEl) feedbackEl.value = '';
+    if (statusEl) statusEl.textContent = '';
+    if (submitBtn) submitBtn.disabled = true;
+    modal.classList.add('show');
+  }
+
+  function closeModal() {
+    modal.classList.remove('show');
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (laterBtn) laterBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  if (submitBtn) {
+    submitBtn.addEventListener('click', async () => {
+      if (!selected) return;
+
+      if (!APPS_SCRIPT_URL || !APPS_SCRIPT_URL.startsWith('https://script.google.com/macros/s/')) {
+        if (statusEl) statusEl.textContent = 'URL Google Apps Script belum valid.';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      if (statusEl) statusEl.textContent = 'Mengirim penilaian & masukan Anda...';
+
+      const payload = {
+        timestamp: new Date().toISOString(),
+        rating_value: selected.rating_value,
+        emoji: selected.emoji,
+        label: selected.label,
+        feedback: feedbackEl ? feedbackEl.value.trim() : '',
+        page_from: 'dashboard_return',
+        user_agent: navigator.userAgent
+      };
+
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+
+        sessionStorage.setItem(RATED_SESSION_KEY, '1');
+        sessionStorage.removeItem(VISITED_KEY);
+        if (statusEl) statusEl.textContent = 'Terima kasih banyak atas waktu dan masukan Anda!';
+        setTimeout(closeModal, 900);
+      } catch (err) {
+        if (statusEl) statusEl.textContent = 'Maaf, pengiriman belum berhasil. Silakan coba lagi ya.';
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  function checkAndShowModal() {
+    const returnedFromSubpage = sessionStorage.getItem(VISITED_KEY) === '1';
+    const alreadyRated = sessionStorage.getItem(RATED_SESSION_KEY) === '1';
+
+    if (returnedFromSubpage && !alreadyRated && !modalScheduled && !modal.classList.contains('show')) {
+      modalScheduled = true;
+      sessionStorage.removeItem(VISITED_KEY);
+      setTimeout(openModal, 250);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', checkAndShowModal);
+  } else {
+    checkAndShowModal();
+  }
+
+  window.addEventListener('pageshow', checkAndShowModal);
+})();
+</script>
 </body>
 </html>
