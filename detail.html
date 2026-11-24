@@ -1,92 +1,314 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
   <meta charset="UTF-8">
-  <title class="title">Detail Parameter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Parameter - Si Tarif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: url('bg-lab.png') no-repeat center center fixed; background-size: cover; }
-    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    th, td { border: 1px solid #ccc; padding: 8px; }
-    th { background: #f5f5f5; }
-    input[type="checkbox"] { transform: scale(1.2); }
-    .total { margin-top: 15px; font-weight: bold; }
-	.title { font-size: 12px !important; font-weight: bold; text-align: center; margin-bottom: 10px; }
-	.content-box {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 900px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 28px 16px;
+      background: url('bg-lab.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #1e293b;
+    }
+
+    .main-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.97);
+      padding: 28px 32px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+
+    #sampleName {
+      margin: 0 0 20px 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: #0f172a;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+      background-color: #ffffff;
+    }
+
+    thead th {
+      background: linear-gradient(135deg, #0f4c81 0%, #1665a8 100%);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      padding: 14px 14px;
+      text-align: left;
+      border-bottom: 2px solid #0b3961;
+    }
+
+    thead th:nth-child(1),
+    thead th:nth-child(5) {
+      text-align: center;
+    }
+
+    thead th:nth-child(4) {
+      text-align: right;
+    }
+
+    tbody td {
+      padding: 13px 14px;
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: #334155;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tbody tr:hover {
+      background-color: #eef6ff;
+      transition: background-color 0.15s ease;
+    }
+
+    tbody tr.selected-row {
+      background-color: #e0f2fe !important;
+    }
+
+    tbody td:nth-child(1) {
+      text-align: center;
+      font-weight: 500;
+      color: #64748b;
+      width: 55px;
+    }
+
+    tbody td:nth-child(2) {
+      font-weight: 500;
+      color: #0f172a;
+      width: 22%;
+    }
+
+    tbody td:nth-child(3) {
+      width: 43%;
+    }
+
+    tbody td:nth-child(4) {
+      text-align: right;
+      font-weight: 600;
+      color: #0f4c81;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      width: 16%;
+    }
+
+    tbody td:nth-child(5) {
+      text-align: center;
+      width: 75px;
+    }
+
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #0f4c81;
+      cursor: pointer;
+    }
+
+    .summary-bar {
+      margin-top: 20px;
+      padding: 16px 20px;
+      background-color: #f1f5f9;
+      border-left: 4px solid #0f4c81;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .total {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .total span {
+      color: #0f4c81;
+      font-size: 18px;
+    }
+
+    .btn-back {
+      background-color: #ffffff;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .footer-info {
+      margin-top: 20px;
+      padding: 14px 18px;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      text-align: left;
+      font-size: 12.5px;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .footer-info p {
+      margin: 6px 0;
+    }
+
+    .footer-info p:first-child {
+      margin-top: 0;
+    }
+
+    .footer-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer-info strong {
+      color: #1e293b;
+    }
+
+    @media (max-width: 600px) {
+      .content-box {
+        padding: 18px;
+      }
+
+      #sampleName {
+        font-size: 17px;
+      }
+    }
   </style>
 </head>
-<div class="main-container">
+<script>sessionStorage.setItem('sitarif_visited_subpage', '1');</script>
 <body>
-<div class="main-container">
-<div class="content-box">
-  <h2 id="sampleName"></h2>
-  <table id="paramTable">
-    <thead>
-      <tr><th>No</th><th>Parameter Uji</th><th>Metode Uji</th><th>Harga Per-pengujian</th><th>Pilih</th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-  <div class="total">Total Biaya: Rp <span id="total">0</span></div>
-  <button onclick="history.back()">Kembali</button>
-  <div class="footer-info">
-  <div style="margin-top: 10px; text-align:left; font-size:12px;">
-    <p><strong>Timeline Pengujian:</strong> 1–5 item (8 Hari Kerja), 6–15 item (14 Hari Kerja), &gt;16 item (20 Hari Kerja)</p>
-    <p><strong>Jumlah Minimal Sampel Pangan:</strong> Uji Kimia: 3 kemasan @minimal 100gr; Uji Mikrobiologi: 5 kemasan @minimal 100gr</p>
-    <p><strong>Jumlah Minimal Sampel AMIU (Air Minum Isi Ulang):</strong> Uji Mikrobiologi: 3 kemasan @minimal 300ml</p>
-</div>
-</div>
-</div>
-</div>
-    <script src="https://bspjiambon.id/assets/js/jquery.js"></script>
-<script src="https://bspjiambon.id/assets/js/bootstrap.min.js"></script>
+  <div class="main-container">
+    <div class="content-box">
+      <h2 id="sampleName">Memuat data parameter...</h2>
+
+      <div class="table-wrapper">
+        <table id="paramTable">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Parameter Uji</th>
+              <th>Metode Uji</th>
+              <th>Harga Per-pengujian</th>
+              <th>Pilih</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="summary-bar">
+        <div class="total">Total Biaya: Rp <span id="total">0</span></div>
+        <button type="button" class="btn-back" onclick="history.back()">← Kembali</button>
+      </div>
+
+      <div class="footer-info">
+        <p><strong>Timeline Pengujian:</strong> 1–5 item (8 Hari Kerja), 6–15 item (14 Hari Kerja), &gt;16 item (20 Hari Kerja)</p>
+        <p><strong>Jumlah Minimal Sampel Pangan:</strong> Uji Kimia: 3 kemasan @minimal 100gr; Uji Mikrobiologi: 5 kemasan @minimal 100gr</p>
+        <p><strong>Jumlah Minimal Sampel AMIU (Air Minum Isi Ulang):</strong> Uji Mikrobiologi: 3 kemasan @minimal 300ml</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://bspjiambon.id/assets/js/jquery.js"></script>
+  <script src="https://bspjiambon.id/assets/js/bootstrap.min.js"></script>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-const sampleId = parseInt(urlParams.get('sample'));
-let total = 0;
+    const sampleId = parseInt(urlParams.get('sample'), 10);
+    let total = 0;
 
-fetch('data.json')
-  .then(res => res.json())
-  .then(data => {
-    // Cari sample berdasarkan id_sample
-    const sample = data.samples.find(s => s.id_sample === sampleId);
-    if (!sample) {
-      document.getElementById('sampleName').textContent = 'Sample tidak ditemukan';
-      return;
-    }
-    document.getElementById('sampleName').textContent =
-      `Daftar Parameter - ${sample.name}`;
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const sample = data.samples.find(s => s.id_sample === sampleId);
+        if (!sample) {
+          document.getElementById('sampleName').textContent = 'Sample tidak ditemukan';
+          return;
+        }
+        document.getElementById('sampleName').textContent = `Daftar Parameter - ${sample.name}`;
 
-    // Filter parameter yang sesuai id_sample
-    const filteredParams = data.parameters.filter(p => p.id_sample === sampleId);
-    const tbody = document.querySelector('#paramTable tbody');
+        const filteredParams = data.parameters.filter(p => p.id_sample === sampleId);
+        const tbody = document.querySelector('#paramTable tbody');
 
-    filteredParams.forEach((p, i) => {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>${i+1}</td>
-        <td>${p.name}</td>
-		<td>${p.method}</td>
-        <td>${p.price.toLocaleString('id-ID')}</td>
-        <td><input type="checkbox" data-price="${p.price}"></td>`;
-      tbody.appendChild(tr);
-    });
+        filteredParams.forEach((p, i) => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${i + 1}</td>
+            <td>${p.name}</td>
+            <td>${p.method}</td>
+            <td>${Number(p.price).toLocaleString('id-ID')}</td>
+            <td><input type="checkbox" data-price="${p.price}" aria-label="Pilih ${p.name}"></td>
+          `;
+          tbody.appendChild(tr);
+        });
 
-    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-      cb.addEventListener('change', e => {
-        const price = parseInt(e.target.dataset.price);
-        total += e.target.checked ? price : -price;
-        document.getElementById('total').textContent = total.toLocaleString('id-ID');
+        document.querySelectorAll('#paramTable input[type="checkbox"]').forEach(cb => {
+          cb.addEventListener('change', e => {
+            const price = parseInt(e.target.dataset.price, 10) || 0;
+            const row = e.target.closest('tr');
+
+            if (e.target.checked) {
+              total += price;
+              row.classList.add('selected-row');
+            } else {
+              total -= price;
+              row.classList.remove('selected-row');
+            }
+
+            document.getElementById('total').textContent = total.toLocaleString('id-ID');
+          });
+        });
+      })
+      .catch(err => {
+        console.error('Gagal memuat data.json:', err);
+        document.getElementById('sampleName').textContent = 'Gagal memuat data parameter';
       });
-    });
-  });
-
   </script>
 </body>
 </html>
